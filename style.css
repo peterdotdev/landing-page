@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/****************
+***** HEADER ****
+****************/
+
+body {
+    background-color: #EEEEEE;
+}
+
+header {
+    position: fixed;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    height: 80px;
+    width: 100%;
+}
+
+#header-img {
+    margin-left: 30px;
+    width: 300px; 
+}
+
+nav {
+    margin-right: 7%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 27vw;
+}
+
+li {
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    padding-top: 85px;
+}
+
+/****************
+****** MAIN *****
+****************/
+
+h1 {
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+h2 {
+    font-family: Lato, sans-serif;
+}
+
+#email {
+    text-indent: 5px;
+    height: 25px;
+    width: 275px;
+}
+
+#submit {
+    background-color: #F1C40F;
+    border: 0px solid #F1C40F;
+    display: block;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 16px auto 80px;
+    text-align: center;
+    transition: all ease-out 0.5s;
+}
+
+#submit:hover {
+    background-color: #ffa500;
+}
+
+/****************
+****** MAIN *****
+**** FEATURES ***
+****************/
+
+#features {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#features > div {
+    margin: 0 auto 60px;
+    width: 100%;
+    max-width: 990px;
+}
+
+#features > div p {
+    font-family: Lato, sans-serif;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon-i {
+    width: 20%;
+}
+
+.icon-ii {
+    width: 80%;
+    text-align: left;
+}
+
+.fas {
+    color: #FF8C00;
+}
+
+/****************
+****** MAIN *****
+** HOW-IT-WORKS *
+****************/
+
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+#video {
+    width: 100%;
+    max-width: 510px;
+}
+
+
+/****************
+****** MAIN *****
+**** PRICING ***
+****************/
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#pricing > div {
+    border: 1px solid black;
+    margin: 40px 10px;
+    height: 310px;
+    width: 310px;
+    font-family: Lato, sans-serif;
+    min-width: 240px;
+}
+
+.instrument {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDDDDD; 
+    height: 50px;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.price {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text {
+    margin-bottom: 11px;
+}
+
+button {
+    background-color: #F1C40F;
+    border: 0px solid #F1C40F;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: all 0.5s ease-out;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+/****************
+***** FOOTER ****
+****************/
+
+footer {
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+.footer {
+    background-color: #DDDDDD;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    line-height: 24px;
+    height: 80px;
+    max-width: 1000px;
+}
+
+h3 {
+    font-weight: normal;
+    display: inline;
+    margin-right: 16px;
+}
+
+#last {
+    margin-right: 31px;
+}
+
+.footer > p {
+    margin-right: 22px;
+}
+
+/****************
+** BREAKPOINTS **
+****************/
+
+@media (max-width:550px) {
+    header {
+        flex-direction: column;
+        height: 130px;
+    }
+    #header-img {
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+    nav {
+        padding-bottom: 10px;
+    }
+    .icon-i {
+        display: none;
+        width: 0%;
+    }
+    .icon-ii {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        line-height: 23px;
+    }
+    body {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 790px) {
+    #pricing {
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+    #pricing > div {
+        min-width: 310px;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-bottom: 0;
+    }
+}
